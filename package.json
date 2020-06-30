@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/dayat44/apprestapi/issues"
   },
-  "homepage": "https://github.com/dayat44/apprestapi#readme"
+  "homepage": "https://github.com/dayat44/apprestapi#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "parser": "^0.1.4"
+  }
 }
