@@ -25,7 +25,7 @@ exports.registrasi = function(req,res) {
         if(error){
             console.log(error);
         }else {
-            if(rows.length == 1){
+            if(rows.length == 0){
                 var query = "INSERT INTO ?? SET ?";
                 var table = ["user"];
                 query = mysql.format(query, table);
@@ -33,7 +33,7 @@ exports.registrasi = function(req,res) {
                     if(error){
                         console.log(error);
                     }else {
-                        response.ok("Berhasil menambahkan data user baru", res);
+                        response.ok("Berhasil menambahkan data user baru",res);
                     }
                 });
             }else {
